@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recherche.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="divin">
+            <h1><span>d</span>aril</h1>
+        </div>    
+        <div class="search">
+            <div class="recherche">
+                <input type="text" name="search" id="search" class="searchbar" placeholder="Entrez votre recherche ici...">
+            </div>
+            <div class="button">
+                <button class="btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Rechercher
+                </button>
+            </div>
+        </div> 
+    </section>
+    <script>
+        var input= document.querySelector(".searchbar");
+        var button= document.querySelector(".btn");
+        button.onclick = function()
+        {
+            var url ='https://www.google.com/search?q='+ input.value;
+            if (input.value.lenght == 0){}
+            else
+            {
+                window.open(url,'_self')
+            }
+        } 
+    </script>
+</body>
+</html>

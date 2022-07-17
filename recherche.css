@@ -1,0 +1,164 @@
+body
+{
+    background-image: url("526622.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recherche
+{
+    width: 100%;
+    height: 90px;
+    margin-top:0px ;
+    text-align: center;
+}
+.searchbar
+{
+    border-radius: 35px;
+    width: 90%;
+    padding: 13px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(255,255,255,0.5);
+    font-size: 16px;
+    outline: 0;    
+    margin-left: 0px;
+}
+.button
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+span
+{
+    text-transform: uppercase;
+    color: rgb(244, 248, 7);
+}
+.search
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 200px;
+    
+}
+.divin
+{
+    padding-left: 0px;
+    padding-top: 20px;
+}
+h1
+{
+    color: rgba(240, 252, 140, 0.5);
+    font-size: 70px;
+    font-family: 'mv boli';
+}
+
+.btn-search :hover
+{
+    border: 1px solid rgba(0,0,0,0);
+
+}
+.btn-search
+{
+    border: 1px solid rgba(255,255,255,0.5);
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+button
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #4bf321;
+    background-color:transparent;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 5px;
+    border-style: none;
+}
+button:hover
+{
+    color: #052907;
+    background: #4bf321;
+    box-shadow: 0 0 10px #4bf321, 0 0 40px #4bf321, 0 0 80px #4bf321;
+    transition-delay: 1.1s;
+}
+button span
+{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#4bf321);
+}
+button:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+button span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#4bf321);
+}
+button:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+button span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#4bf321);
+}
+button:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+button span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#4bf321);
+}
+button:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
